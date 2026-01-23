@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyCheck 支援中心</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">EasyCheck</h1>
+      <p class="tagline">AI 作業批改小幫手</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- FAQ Section -->
+    <section class="section">
+      <h2 class="section-title">常見問題</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">EasyCheck 是什麼？</summary>
+          <div class="faq-answer">
+            <p>EasyCheck 是一款幫助家長拍攝孩子作業、由 AI 自動批改並提供訂正指引的 App。讓檢查作業變得更輕鬆！</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">如何新增孩子？</summary>
+          <div class="faq-answer">
+            <p>登入後，在首頁點擊「新增孩子」按鈕，輸入孩子的名字即可。每個孩子都會有獨立的作業記錄。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">訂閱方案有哪些？</summary>
+          <div class="faq-answer">
+            <p>我們提供三種月付方案：</p>
+            <ul>
+              <li><strong>1 位孩子方案</strong> - NT$30/月</li>
+              <li><strong>2 位孩子方案</strong> - NT$50/月</li>
+              <li><strong>3 位孩子方案</strong> - NT$70/月</li>
+            </ul>
+            <p>您可以隨時升級或降級方案。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">如何取消訂閱？</summary>
+          <div class="faq-answer">
+            <p>請依照以下步驟取消訂閱：</p>
+            <ol>
+              <li>開啟 iPhone「設定」</li>
+              <li>點擊最上方的「Apple ID」</li>
+              <li>選擇「訂閱項目」</li>
+              <li>找到「EasyCheck」並點擊</li>
+              <li>選擇「取消訂閱」</li>
+            </ol>
+            <p>取消後，您仍可使用服務至當期結束。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">如何恢復購買？</summary>
+          <div class="faq-answer">
+            <p>如果您曾經訂閱過，可以在升級方案的視窗中點擊「恢復購買」按鈕，系統會自動恢復您的訂閱狀態。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">AI 批改準確嗎？</summary>
+          <div class="faq-answer">
+            <p>我們的 AI 批改系統持續優化中，準確率已達到很高的水準。但由於手寫辨識的複雜性，建議家長在 AI 批改後再做最後確認，特別是對於書寫較潦草的作業。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">支援哪些類型的作業？</summary>
+          <div class="faq-answer">
+            <p>目前主要支援數學計算題、填空題、選擇題等類型。我們會持續擴展支援的作業類型。</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">照片會被保存嗎？</summary>
+          <div class="faq-answer">
+            <p>作業照片會安全地儲存在雲端伺服器，僅供您查看批改結果使用。您可以隨時在 App 中刪除作業記錄。詳細資料處理方式請參閱我們的<a href="privacy.html">隱私政策</a>。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <h2 class="section-title">聯絡我們</h2>
+      <p class="section-desc">有任何問題或建議嗎？請填寫以下表單，我們會盡快回覆您。</p>
+
+      <form class="contact-form" action="https://formspree.io/f/mvzkagvp" method="POST">
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name" required placeholder="請輸入您的姓名">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="請輸入您的 Email">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">主題</label>
+          <select id="subject" name="subject" required>
+            <option value="">請選擇主題</option>
+            <option value="account">帳號問題</option>
+            <option value="subscription">訂閱問題</option>
+            <option value="grading">批改問題</option>
+            <option value="bug">回報錯誤</option>
+            <option value="suggestion">功能建議</option>
+            <option value="other">其他</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">訊息內容</label>
+          <textarea id="message" name="message" rows="5" required placeholder="請詳細描述您的問題或建議"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">送出</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="privacy.html">隱私政策</a>
+      </div>
+      <p class="copyright">&copy; 2024 EasyCheck. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
