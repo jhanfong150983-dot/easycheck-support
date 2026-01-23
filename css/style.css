@@ -215,6 +215,50 @@ main {
   transform: scale(0.98);
 }
 
+/* Policy Navigation */
+.policy-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 8px;
+  background: #fff;
+  border: 1.5px solid #d6cbb8;
+  border-radius: 12px;
+}
+
+.policy-nav-item {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #5d564c;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.policy-nav-item:hover {
+  background: rgba(31, 59, 47, 0.05);
+  color: #1f3b2f;
+}
+
+.policy-nav-item.active {
+  background: #1f3b2f;
+  color: #fffaf0;
+}
+
+/* Policy Content */
+.policy-content {
+  display: none;
+}
+
+.policy-content.active {
+  display: block;
+}
+
 /* Privacy Page */
 .privacy-section {
   background: #fff;
